@@ -9,3 +9,7 @@ jobs:
     steps:
     - name: step1
       run: echo "Hello World!"
+    - name: step2
+      run: |
+        echo "Line 1"
+        echo "Line 2"
