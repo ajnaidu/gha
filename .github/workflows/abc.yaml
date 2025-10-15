@@ -8,6 +8,6 @@ jobs:
 
     steps:
     - name: step1
-      run: echo "Hello World!"
+      run: git clone https://github.com/ajnaidu/gha.git
     - name: step2
       run: mvn -v
