@@ -10,6 +10,8 @@ jobs:
     - name: Clone repository
       uses: actions/checkout@v5
     - name: Build application
-      run: pwd
-    - name: abc
-      run: ls
+      run: npm run build
+    - name: Get IP
+      run: ifconfig
+    - name: Deploy application
+      run: npm start
