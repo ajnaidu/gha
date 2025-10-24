@@ -1,6 +1,8 @@
 name: Sample Workflow
 
-on: [workflow_dispatch, push]
+on: 
+  workflow_dispatch:
+  push:
 
 jobs:
   demo:
