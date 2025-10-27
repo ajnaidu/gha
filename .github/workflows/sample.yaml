@@ -20,7 +20,7 @@ jobs:
     - name: Get IP
       run: ifconfig
     - name: Deploy application
-      run: npm start
+      run: echo "Deploying application..."
   sample:
     runs-on: ubuntu-latest
 
@@ -36,4 +36,4 @@ jobs:
     - name: Get IP
       run: ifconfig
     - name: Deploy application
-      run: npm start
+      run: echo "Deploying application..."
