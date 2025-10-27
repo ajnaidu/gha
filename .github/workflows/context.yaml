@@ -1,0 +1,11 @@
+name: Multiple Jobs Workflow
+
+on: push
+
+jobs:
+  demo:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Display github context data
+      run: echo "${{ github }}"
