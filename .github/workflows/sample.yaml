@@ -23,6 +23,7 @@ jobs:
       run: echo "Deploying application..."
   sample:
     runs-on: ubuntu-latest
+    needs: demo
 
     steps:
     - name: Clone repository
