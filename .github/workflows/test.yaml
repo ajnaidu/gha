@@ -1,0 +1,9 @@
+name: Test Workflow
+run-name: Deploying from ${{github.ref}}
+on: workflow_dispatch
+jobs:
+  _test:
+    runs-on: ubuntu-latest
+    steps: 
+    - name: Display env data
+      run: echo "${{toJSON(env)}}"
