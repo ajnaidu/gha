@@ -8,4 +8,4 @@ jobs:
 
     steps:
     - name: Display github context data
-      run: echo "${{ github }}"
+      run: echo "${{ toJSON(github) }}"
