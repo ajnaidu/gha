@@ -1,4 +1,4 @@
-name: Multiple Jobs Workflow
+name: Needs Workflow
 
 on: 
   workflow_dispatch:
