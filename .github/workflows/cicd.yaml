@@ -24,6 +24,7 @@ jobs:
       run: pwd && ls
 
   download:
+    needs: demo
     runs-on: ubuntu-latest
     steps:
     - name: download_artifact
