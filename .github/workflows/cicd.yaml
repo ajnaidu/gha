@@ -7,13 +7,14 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Clone repository
+    - name: clone_repository
       uses: actions/checkout@v5
-    - name: Install dependencies
+    - name: install_dependencies
       run: npm install
-    - name: Build application
+    - name: build
       run: npm run build
-    - name: Get IP
-      run: ifconfig
-    - name: Deploy application
-      run: npm start
+    - name: upload_artifact
+      uses: actions/upload-artifact@v5
+      with:
+        name: test
+        path: README.md
