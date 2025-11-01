@@ -21,10 +21,10 @@ jobs:
           README.md
           package.json
 
- download:
-   runs-on: ubuntu-latest
-   steps:
-   - name: download_artifact
-     uses: actions/donwload-artifact@v6
-     with:
-       name: test
+  download:
+    runs-on: ubuntu-latest
+    steps:
+    - name: download_artifact
+      uses: actions/donwload-artifact@v6
+      with:
+        name: test
