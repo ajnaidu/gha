@@ -20,6 +20,8 @@ jobs:
         path: |
           README.md
           package.json
+    - name: list contents
+      run: pwd && ls
 
   download:
     runs-on: ubuntu-latest
