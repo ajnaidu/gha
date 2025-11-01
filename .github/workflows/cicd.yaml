@@ -17,4 +17,14 @@ jobs:
       uses: actions/upload-artifact@v5
       with:
         name: test
-        path: README.md
+        path: |
+          README.md
+          package.json
+
+ download:
+   runs-on: ubuntu-latest
+   steps:
+   - name: download_artifact
+     uses: actions/donwload-artifact@v6
+     with:
+       name: test
