@@ -31,3 +31,5 @@ jobs:
       uses: actions/download-artifact@v6
       with:
         name: test
+    - name: list contents
+      run: pwd && ls
