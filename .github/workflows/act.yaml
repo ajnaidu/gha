@@ -1,0 +1,15 @@
+name: Activity Types Workflow
+run-name: Activity Types
+
+on: 
+  issues:
+    types: created
+
+jobs:
+  demo:
+    runs-on: ubuntu-latest
+
+    steps:    
+    - name: Deploy application
+      run: echo "Deploying application..."
+  
