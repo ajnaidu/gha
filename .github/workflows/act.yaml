@@ -3,7 +3,7 @@ run-name: Activity Types
 
 on: 
   issues:
-    types: created
+    types: opened
 
 jobs:
   demo:
