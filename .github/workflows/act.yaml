@@ -1,5 +1,5 @@
 name: Activity Types Workflow
-run-name: Activity Types
+# run-name: Activity Types
 
 on: 
   issues:
