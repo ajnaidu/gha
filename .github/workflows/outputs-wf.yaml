@@ -7,7 +7,7 @@ jobs:
   job1:
     runs-on: ubuntu-latest
     outputs:
-      job_key_name: ${{ steps.abc.step_key_name }}
+      job_key_name: ${{ steps.step1.step_key_name }}
     steps:
     - name: step1
       id: abc
