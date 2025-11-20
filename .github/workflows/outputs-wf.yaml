@@ -1,14 +1,23 @@
 name: Outputs WF
 
-on: workflow_dispatch
+on: push
 
 jobs:
   job1:
     runs-on: ubuntu-latest
+    outputs:
+      job_key_name: steps.abc.outputs.step_key_name
     steps:
     - name: step1
       id: abc
-      run: echo "student_name=Ajay" >> $GITHUB_OUTPUT
+      run: echo "step_key_name=Ajay" >> $GITHUB_OUTPUT
     - name: step2
       id: def
-      run: echo "My name is ${{ steps.abc.outputs.student_name }}"
+      run: echo "My name is ${{ steps.abc.outputs.step_key_name }}"
+
+  job2:
+    needs: job1
+    runs-on: ubuntu-latest
+    steps:
+    - name: j2-step1
+      run: echo "My name is ${{ needs.job1.outputs.job_key_name }}"
