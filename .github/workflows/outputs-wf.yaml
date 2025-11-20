@@ -9,4 +9,4 @@ jobs:
     - name: step1
       run: echo "name=Ajay" >> $GITHUB_OUTPUT
     - name: step2
-      run: "My name is $name"
+      run: echo "My name is $name"
