@@ -7,6 +7,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: step1
-      run: echo "name=Ajay" >> $GITHUB_OUTPUT
+      id: abc
+      run: echo "student_name=Ajay" >> $GITHUB_OUTPUT
     - name: step2
-      run: echo "My name is $name"
+      id: def
+      run: echo "My name is ${{ steps.abc.outputs.student_name }}"
