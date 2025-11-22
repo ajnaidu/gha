@@ -2,9 +2,11 @@ name: Variables demo
 run-name: Variables demo
 on: workflow_dispatch
 env:
-  NAME: Ajay Naidu
+  NAME: Ajay
 jobs:
   job1:
+    env:
+      NAME: Naidu
     runs-on: ubuntu-latest
     steps:
     - name: step1
