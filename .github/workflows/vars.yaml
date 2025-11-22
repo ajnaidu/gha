@@ -11,7 +11,7 @@ jobs:
     steps:
     - name: step1
       env:
-        NAME: Ajay Naidu
+        NAME: ${{ env.NAME }}-job
       run: echo "This value is from step - ${{ env.NAME }}"
     - name: step2
       run: echo "This value is from job - $NAME"
