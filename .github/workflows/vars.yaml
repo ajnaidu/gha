@@ -1,0 +1,11 @@
+name: Variables demo
+run-name: Variables demo
+on: workflow_dispatch
+env:
+  NAME: Ajay Naidu
+jobs:
+  job1:
+    runs-on: ubunut-latest
+    steps:
+    - name: step1
+      run: echo $NAME
