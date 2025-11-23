@@ -1,7 +1,7 @@
 name: Outputs WF
 run-name: Outputs WF
 
-on: [push, workflow_dispatch]
+on: workflow_dispatch
 
 jobs:
   job1:
