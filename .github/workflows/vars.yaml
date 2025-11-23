@@ -1,6 +1,6 @@
 name: Variables demo
 run-name: Variables demo
-on: workflow_dispatch
+on: push
 env:
   NAME: Ajay
 jobs:
@@ -10,4 +10,4 @@ jobs:
     - name: step1
       run: echo "The name is - ${{ env.NAME }}"
     - name: step2
-      run: echo "This value is from repo - ${{ vars.REPOSITORY_NAME }}"
+      run: echo "This value is from repo - ${{ vars.REP_NAME }}"
