@@ -15,3 +15,5 @@ jobs:
       run: echo "This value is from repo - ${{ env.VAR_REP_NAME }}"
     - name: step3
       run: echo "This value is from repo - ${{ env.SEC_REP_NAME }}"
+    - name: step4
+      run: env
