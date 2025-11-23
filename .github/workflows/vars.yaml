@@ -5,18 +5,9 @@ env:
   NAME: Ajay
 jobs:
   job1:
-    env:
-      NAME: Naidu
     runs-on: ubuntu-latest
     steps:
     - name: step1
-      env:
-        NAME: $NAME-job
-      run: echo "This value is from step - ${{ env.NAME }}"
+      run: echo "The name is - ${{ env.NAME }}"
     - name: step2
-      run: echo "This value is from job - $NAME"
-  job2:
-    runs-on: ubuntu-latest
-    steps:
-    - name: step1
-      run: echo "This value is from WF - $NAME"
+      run: echo "This value is from repo - ${{ vars.REPOSITORY_NAME }}"
