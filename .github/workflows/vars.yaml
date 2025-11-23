@@ -7,7 +7,6 @@ env:
 jobs:
   job1:
     runs-on: ubuntu-latest
-    environment: PROD
     steps:
     - name: step1
       run: echo "The name is - ${{ env.NAME }}"
@@ -17,5 +16,4 @@ jobs:
       run: echo "This value is from repo - ${{ secrets.REP_SECRET }}"
     - name: step4
       run: env
-    - name: step5
-      run: echo ${{ vars.ENV_VAR }}
+      
