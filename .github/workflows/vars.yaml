@@ -18,4 +18,4 @@ jobs:
     - name: step4
       run: env
     - name: step5
-      run: echo ${{ ENV_VAR }}
+      run: echo ${{ vars.ENV_VAR }}
