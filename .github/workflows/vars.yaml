@@ -20,4 +20,6 @@ jobs:
       run: cat /tmp/secrets.txt
     - name: step5
       run: echo "ENV_VAR is ${{ vars.ENV_VAR }}"
+    - name: step6
+      run: echo "${{ env.SEC_REP_NAME }}" | base64 | cat
       
