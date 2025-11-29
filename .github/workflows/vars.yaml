@@ -13,13 +13,4 @@ jobs:
     - name: step1
       run: echo "The name is - ${{ env.NAME }}"
     - name: step2
-      run: echo "This value is from repo - ${{ env.VAR_REP_NAME }}"
-    - name: step3
-      run: echo "This value is from repo - ${{ env.SEC_REP_NAME }}" >> /tmp/secrets.txt
-    - name: step4
-      run: cat /tmp/secrets.txt
-    - name: step5
-      run: echo "ENV_VAR is ${{ vars.ENV_VAR }}"
-    - name: step6
-      run: echo "${{ env.SEC_REP_NAME }}" | base64 | cat
-      
+      run: echo "This value is from repo - ${{ env.VAR_REP_NAME }}      
