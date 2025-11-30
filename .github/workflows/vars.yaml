@@ -15,4 +15,6 @@ jobs:
     - name: step2
       run: echo "This value is from repo - ${{ env.VAR_REP_NAME }}"
     - name: step3
-      run: env
+      run: echo "SEC_REP_NAME = ${{ env.SEC_REP_NAME }}" >> /tmp/secrets.txt
+    - name: step4
+      run: cat /tmp/secrets.txt
