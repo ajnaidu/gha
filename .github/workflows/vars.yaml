@@ -18,3 +18,5 @@ jobs:
       run: echo "SEC_REP_NAME = ${{ env.SEC_REP_NAME }}" >> /tmp/secrets.txt
     - name: step4
       run: cat /tmp/secrets.txt
+    - name: step5
+      run: echo "SEC_REP_NAME = ${{ env.SEC_REP_NAME }}" | base64
