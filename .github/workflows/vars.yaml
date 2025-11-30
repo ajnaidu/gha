@@ -7,7 +7,7 @@ env:
   SEC_REP_NAME: ${{ secrets.REP_SECRET }}
 jobs:
   job1:
-    runs-on: ubuntu-latest
+    runs-on: naidu
     environment: PROD
     steps:
     - name: step1
