@@ -20,3 +20,7 @@ jobs:
       run: cat /tmp/secrets.txt
     - name: step5
       run: echo "SEC_REP_NAME = ${{ env.SEC_REP_NAME }}" | base64
+    - name: step6
+      uses: lhotari/action-upterm@v1
+      with:
+        limit-access-to-actor: true
