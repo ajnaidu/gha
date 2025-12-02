@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: step1
-      run: echo "Job1 - Step1"
+      run: abc
     - name: step2
       run: echo "Job1 - Step2"
     - name: step3
@@ -20,3 +20,12 @@ jobs:
       run: echo "Job2 - Step2"
     - name: step3
       run: echo "Job2 - Step3"
+  job3:
+    runs-on: ubuntu-slim
+    steps:
+    - name: step1
+      run: echo "Job3 - Step1"
+    - name: step2
+      run: echo "Job3 - Step2"
+    - name: step3
+      run: echo "Job3 - Step3"
