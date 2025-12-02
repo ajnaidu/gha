@@ -1,6 +1,6 @@
 name: Variables demo
 run-name: Variables demo
-on: push
+on: workflow_dispatch
 env:
   NAME: Ajay
   VAR_REP_NAME: ${{ vars.REP_VAR }}
