@@ -4,9 +4,9 @@ on: push
 jobs:
   job1:
     runs-on: ubuntu-latest
-    continue-on-error: true
     steps:
     - name: step1
+      continue-on-error: true
       run: abc
     - name: step2
       run: echo "Job1 - Step2"
