@@ -12,6 +12,7 @@ jobs:
       if: failure()
       run: echo "Job1 - Step2"
     - name: step3
+      if: always()
       run: echo "Job1 - Step3"
   job2:
     runs-on: ubuntu-slim
