@@ -15,6 +15,7 @@ jobs:
       with:
         path: |
           ~/.npm
+        key: demo-${{ hashFiles("**/package-lock.json") }}
     - name: Install dependencies
       run: npm install
     - name: Build application
