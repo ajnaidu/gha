@@ -9,7 +9,7 @@ jobs:
       id: step1
       run: abc
     - name: step2
-      if: steps.step1.outcome == 'failure'
+      if: failure() && steps.step1.outcome == 'failure'
       run: echo "Job1 - Step2"
     - name: step3
       run: echo "Job1 - Step3"
