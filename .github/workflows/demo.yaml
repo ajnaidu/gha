@@ -10,7 +10,7 @@ jobs:
       continue-on-error: true
       run: abc
     - name: step2
-      if: steps.step1.outcome == 'failure'
+      if: steps.step1.conclusion == 'success'
       run: echo "Job1 - Step2"
     - name: step3
       run: echo "Job1 - Step3"
