@@ -4,6 +4,7 @@ on: push
 jobs:
   job1:
     strategy:
+      fail-fast: true
       matrix:
         os: ['ubuntu-latest', 'windows-latest', 'macos-15']
         node: [12, 14, 16]
