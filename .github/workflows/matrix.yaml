@@ -1,0 +1,11 @@
+name: Matrix WF
+run-name: Matrix WF
+on: push
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+    - name: step1
+      uses: actions/setup-node@v6
+      with:
+        node-version: '12'
