@@ -3,9 +3,13 @@ run-name: Matrix WF
 on: push
 jobs:
   job1:
-    runs-on: windows-latest
+    strategy:
+      matrix:
+        os: ['ubuntu-latest', 'windows-latest', 'macos-15']
+        node: [12, 14, 16]
+    runs-on: ${{ matrix.os }}
     steps:
     - name: step1
       uses: actions/setup-node@v6
       with:
-        node-version: '16'
+        node-version: ${{ matrix.node }}
